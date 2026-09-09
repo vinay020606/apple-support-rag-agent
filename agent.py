@@ -1,18 +1,20 @@
 """
-agent.py - Core AI Support Agent Module
+agent.py - Core AI Support Agent Module (Local LLM + HyDE RAG Pipeline)
 AI Customer Support Agent & Evaluation Pipeline (@AppleSupport)
 
 Implements 3 execution baselines:
 1. TRIVIAL: Zero-shot majority class intent, never escalate, static generic response.
 2. SIMPLE: Few-shot LLM intent classification & escalation without RAG context.
-3. RAG_AGENT: Full 4-stage pipeline (Intent Classification -> Hybrid RRF Retrieval -> Escalation Engine -> Grounded Draft Generator).
+3. RAG_AGENT: Full 4-stage pipeline (Intent Classification -> HyDE Hybrid Retrieval -> Escalation Engine -> Local LLM Grounded Generator).
 """
 
 import os
 import re
 import json
-from typing import Dict, List, Optional, Tuple
+import time
+from typing import Dict, List, Optional, Tuple, Generator
 from vector_store import ResolutionVectorStore
+from local_llm import LocalLLM
 
 INTENTS = [
     "technical_issue",
@@ -26,6 +28,7 @@ INTENTS = [
 class AppleSupportAgent:
     def __init__(self, vector_store: Optional[ResolutionVectorStore] = None):
         self.vector_store = vector_store or ResolutionVectorStore()
+        self.local_llm = LocalLLM()
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         if self.openai_api_key:
             try:
@@ -84,57 +87,8 @@ class AppleSupportAgent:
         return False, "N/A"
 
     def generate_draft_response(self, query: str, intent: str, retrieved_context: List[Dict]) -> str:
-        """Grounded Draft Generator using historical resolution context."""
-        context_str = ""
-        if retrieved_context:
-            context_str = "\n".join([
-                f"- Past Similar Resolution: {r['brand_resolution']}"
-                for r in retrieved_context
-            ])
-
-        # If OpenAI API is available, generate grounded response via LLM
-        if self.client:
-            try:
-                prompt = f"""You are AppleSupport, an official customer support representative on Twitter.
-Customer Tweet: "{query}"
-Classified Intent: {intent}
-
-Historical Similar Resolutions from Apple Support database:
-{context_str}
-
-Task: Write a concise, polite, helpful Twitter reply (under 280 characters).
-Base your advice directly on the past resolutions provided if relevant. Include official self-service links (e.g. iforgot.apple.com, reportaproblem.apple.com, support.apple.com/repair, apple.com/support/products) where applicable.
-
-Twitter Reply:"""
-                response = self.client.chat.completions.create(
-                    model="gpt-3.5-turbo",
-                    messages=[{"role": "user", "content": prompt}],
-                    max_tokens=100,
-                    temperature=0.3
-                )
-                return response.choices[0].message.content.strip()
-            except Exception:
-                pass
-
-        # Robust Grounded Fallback Generator
-        if retrieved_context:
-            best_resolution = retrieved_context[0]['brand_resolution']
-            return f"{best_resolution} If you have further questions, please send us a DM!"
-        
-        # Query-specific fallback handling
-        query_lower = query.lower()
-        if "applecare" in query_lower or "apple care" in query_lower:
-            return "AppleCare+ provides unlimited accidental damage protection, 24/7 priority support, $29 screen repairs, and express replacement. Learn more at apple.com/support/products."
-
-        templates = {
-            "technical_issue": "We understand how frustrating technical issues can be! Please try force restarting your device and ensure you're updated to the latest iOS. DM us if it persists!",
-            "account_access": "Account security is our top priority. You can safely manage and recover your account at iforgot.apple.com or appleid.apple.com.",
-            "billing_refund": "You can inspect your purchase history and request a refund directly at reportaproblem.apple.com. Let us know if you have questions!",
-            "order_shipping": "You can track your order status and shipping updates anytime at apple.com/orderstatus. DM us your order number if needed!",
-            "hardware_repair": "AppleCare+ covers accidental damage with a $29 screen repair fee. Schedule a Genius Bar appointment or check repair options at support.apple.com/repair.",
-            "general_inquiry": "Thanks for reaching out to Apple Support! Check detailed specifications and support guides at support.apple.com or apple.com/support/products."
-        }
-        return templates.get(intent, "Thanks for reaching out to Apple Support. Please send us a DM so we can assist you further!")
+        """Grounded Draft Generator using 100% Local LLM and historical resolution context."""
+        return self.local_llm.generate_response(query, intent, retrieved_context)
 
     def process_message(self, tweet_text: str, mode: str = "RAG_AGENT") -> Dict:
         if mode == "TRIVIAL":
@@ -164,9 +118,10 @@ Twitter Reply:"""
                 "draft_reply": draft
             }
 
-        else: # RAG_AGENT
+        else: # RAG_AGENT with HyDE
             intent = self.classify_intent_rule_based(tweet_text)
-            retrieved = self.vector_store.retrieve_relevant_resolutions(tweet_text, k=3, intent_filter=intent)
+            # HyDE retrieval
+            retrieved = self.vector_store.retrieve_relevant_resolutions(tweet_text, k=3, intent_filter=intent, use_hyde=True)
             should_esc, esc_reason = self.evaluate_escalation_rules(tweet_text, intent)
             
             if should_esc:
@@ -183,9 +138,51 @@ Twitter Reply:"""
                 "draft_reply": draft
             }
 
+    def process_message_init(self, tweet_text: str, mode: str = "RAG_AGENT") -> Dict:
+        """Initial metadata phase for streaming pipeline (retrieval + intent classification)."""
+        if mode == "TRIVIAL":
+            return {
+                "mode": "TRIVIAL",
+                "predicted_intent": "general_inquiry",
+                "predicted_escalate": False,
+                "escalation_reason": "N/A",
+                "retrieved_context": []
+            }
+        elif mode == "SIMPLE":
+            intent = self.classify_intent_rule_based(tweet_text)
+            should_esc, esc_reason = self.evaluate_escalation_rules(tweet_text, intent)
+            return {
+                "mode": "SIMPLE",
+                "predicted_intent": intent,
+                "predicted_escalate": should_esc,
+                "escalation_reason": esc_reason,
+                "retrieved_context": []
+            }
+        else:
+            intent = self.classify_intent_rule_based(tweet_text)
+            retrieved = self.vector_store.retrieve_relevant_resolutions(tweet_text, k=3, intent_filter=intent, use_hyde=True)
+            should_esc, esc_reason = self.evaluate_escalation_rules(tweet_text, intent)
+            return {
+                "mode": "RAG_AGENT",
+                "predicted_intent": intent,
+                "predicted_escalate": should_esc,
+                "escalation_reason": esc_reason,
+                "retrieved_context": retrieved
+            }
+
+    def generate_stream_tokens(self, query: str, intent: str, retrieved_context: List[Dict], should_esc: bool, esc_reason: str) -> Generator[str, None, None]:
+        """Token generator yielding tokens live for real-time SSE streaming."""
+        if should_esc:
+            full_text = f"[ESCALATED TO HUMAN SUPPORT SPECIALIST] Reason: {esc_reason}. An Apple Support manager has been notified to assist you directly."
+            for word in full_text.split(" "):
+                yield word + " "
+                time.sleep(0.04)
+        else:
+            yield from self.local_llm.stream_response(query, intent, retrieved_context)
+
 
 if __name__ == "__main__":
     agent = AppleSupportAgent()
     res = agent.process_message("Is AppleCare+ worth buying for my new iPhone?", mode="RAG_AGENT")
-    print("AppleCare+ Query Output:")
+    print("HyDE + Local LLM Output:")
     print(json.dumps(res, indent=2))
