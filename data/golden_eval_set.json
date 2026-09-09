@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "EVAL-001",
+    "customer_tweet": "My iPhone 14 Pro camera has a black screen whenever I open the camera app after iOS 17.5 update.",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Recommend restarting device, clearing camera cache/app, and updating to latest iOS patch.",
+    "human_judge_score": 4.8
+  },
+  {
+    "id": "EVAL-002",
+    "customer_tweet": "My MacBook Pro battery is swelling up and pushing the trackpad out! Is this dangerous?",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SAFETY_HAZARD: Swollen battery poses thermal runaway risk",
+    "expected_reply_criteria": "Instruct user to shut down immediately, discontinue charging, and escalate to safety repair supervisor.",
+    "human_judge_score": 5.0
+  },
+  {
+    "id": "EVAL-003",
+    "customer_tweet": "Someone locked my Apple ID remotely and demanded $200 ransom to unlock it!",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account takeover and extortion threat",
+    "expected_reply_criteria": "Direct user immediately to security account recovery team and identity lock protocols.",
+    "human_judge_score": 5.0
+  },
+  {
+    "id": "EVAL-004",
+    "customer_tweet": "How do I reset my Apple ID password if I forgot my security answers?",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Direct user to iforgot.apple.com and explain two-factor authentication recovery steps.",
+    "human_judge_score": 4.5
+  },
+  {
+    "id": "EVAL-005",
+    "customer_tweet": "I got billed $450.00 for 10 unauthorized in-app purchases on my credit card last night!",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_FINANCIAL_IMPACT: Unauthorized charge exceeding $50 threshold ($450)",
+    "expected_reply_criteria": "Direct user to reportaproblem.apple.com and escalate to fraud/billing specialist.",
+    "human_judge_score": 4.9
+  },
+  {
+    "id": "EVAL-006",
+    "customer_tweet": "How can I request a refund for a $2.99 app I bought by mistake?",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Provide reportaproblem.apple.com link and self-service refund steps.",
+    "human_judge_score": 4.7
+  },
+  {
+    "id": "EVAL-007",
+    "customer_tweet": "Apple is the worst company ever! I've been transferred 5 times and I demand to talk to a senior executive manager RIGHT NOW!",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High customer frustration & explicit supervisor request",
+    "expected_reply_criteria": "Acknowledge frustration, apologize for poor transfer experience, and route to senior support supervisor.",
+    "human_judge_score": 4.8
+  },
+  {
+    "id": "EVAL-008",
+    "customer_tweet": "How much does it cost to fix a broken back glass on iPhone 15 with AppleCare+?",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "State AppleCare+ fee ($29 for back glass repair) and link to repair scheduling.",
+    "human_judge_score": 4.6
+  },
+  {
+    "id": "EVAL-009",
+    "customer_tweet": "Where can I track my trade-in kit for my old iPhone 12?",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Direct user to check trade-in status at apple.com/trade-in or order status page.",
+    "human_judge_score": 4.5
+  },
+  {
+    "id": "EVAL-010",
+    "customer_tweet": "Does the new iPad Pro M4 support the original Apple Pencil 1st Generation?",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Clarify that iPad Pro M4 requires Apple Pencil Pro or Apple Pencil (USB-C), not 1st Gen.",
+    "human_judge_score": 4.8
+  },
+  {
+    "id": "EVAL-011",
+    "customer_tweet": "My iPhone Bluetooth keeps disconnecting every 5 minutes from my car hands-free. (Benchmark query #11)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.65
+  },
+  {
+    "id": "EVAL-012",
+    "customer_tweet": "My iPhone Bluetooth keeps disconnecting every 5 minutes from my car hands-free. (Benchmark query #12)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.36
+  },
+  {
+    "id": "EVAL-013",
+    "customer_tweet": "My iPhone Bluetooth keeps disconnecting every 5 minutes from my car hands-free. (Benchmark query #13)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.45
+  },
+  {
+    "id": "EVAL-014",
+    "customer_tweet": "My iPhone Bluetooth keeps disconnecting every 5 minutes from my car hands-free. (Benchmark query #14)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.48
+  },
+  {
+    "id": "EVAL-015",
+    "customer_tweet": "My iPhone Bluetooth keeps disconnecting every 5 minutes from my car hands-free. (Benchmark query #15)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.82
+  },
+  {
+    "id": "EVAL-016",
+    "customer_tweet": "iOS update bricked my phone completely, screen won't turn on even when plugged in! (Benchmark query #16)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.38
+  },
+  {
+    "id": "EVAL-017",
+    "customer_tweet": "iOS update bricked my phone completely, screen won't turn on even when plugged in! (Benchmark query #17)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.88
+  },
+  {
+    "id": "EVAL-018",
+    "customer_tweet": "iOS update bricked my phone completely, screen won't turn on even when plugged in! (Benchmark query #18)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.25
+  },
+  {
+    "id": "EVAL-019",
+    "customer_tweet": "iOS update bricked my phone completely, screen won't turn on even when plugged in! (Benchmark query #19)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.98
+  },
+  {
+    "id": "EVAL-020",
+    "customer_tweet": "iOS update bricked my phone completely, screen won't turn on even when plugged in! (Benchmark query #20)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.25
+  },
+  {
+    "id": "EVAL-021",
+    "customer_tweet": "AirPods touch controls are not responding to skip songs. (Benchmark query #21)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.74
+  },
+  {
+    "id": "EVAL-022",
+    "customer_tweet": "AirPods touch controls are not responding to skip songs. (Benchmark query #22)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.21
+  },
+  {
+    "id": "EVAL-023",
+    "customer_tweet": "AirPods touch controls are not responding to skip songs. (Benchmark query #23)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.7
+  },
+  {
+    "id": "EVAL-024",
+    "customer_tweet": "AirPods touch controls are not responding to skip songs. (Benchmark query #24)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.21
+  },
+  {
+    "id": "EVAL-025",
+    "customer_tweet": "AirPods touch controls are not responding to skip songs. (Benchmark query #25)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.79
+  },
+  {
+    "id": "EVAL-026",
+    "customer_tweet": "iCloud backup has been stuck on 99% for 24 hours. (Benchmark query #26)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.78
+  },
+  {
+    "id": "EVAL-027",
+    "customer_tweet": "iCloud backup has been stuck on 99% for 24 hours. (Benchmark query #27)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.96
+  },
+  {
+    "id": "EVAL-028",
+    "customer_tweet": "iCloud backup has been stuck on 99% for 24 hours. (Benchmark query #28)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.58
+  },
+  {
+    "id": "EVAL-029",
+    "customer_tweet": "iCloud backup has been stuck on 99% for 24 hours. (Benchmark query #29)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.68
+  },
+  {
+    "id": "EVAL-030",
+    "customer_tweet": "iCloud backup has been stuck on 99% for 24 hours. (Benchmark query #30)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.34
+  },
+  {
+    "id": "EVAL-031",
+    "customer_tweet": "MacBook Pro overheating to 95 degrees C and shutting off randomly during Zoom calls. (Benchmark query #31)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.3
+  },
+  {
+    "id": "EVAL-032",
+    "customer_tweet": "MacBook Pro overheating to 95 degrees C and shutting off randomly during Zoom calls. (Benchmark query #32)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.38
+  },
+  {
+    "id": "EVAL-033",
+    "customer_tweet": "MacBook Pro overheating to 95 degrees C and shutting off randomly during Zoom calls. (Benchmark query #33)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.99
+  },
+  {
+    "id": "EVAL-034",
+    "customer_tweet": "MacBook Pro overheating to 95 degrees C and shutting off randomly during Zoom calls. (Benchmark query #34)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.58
+  },
+  {
+    "id": "EVAL-035",
+    "customer_tweet": "MacBook Pro overheating to 95 degrees C and shutting off randomly during Zoom calls. (Benchmark query #35)",
+    "ground_truth_intent": "technical_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
+    "human_judge_score": 4.96
+  },
+  {
+    "id": "EVAL-036",
+    "customer_tweet": "How do I change my primary email address associated with Apple ID? (Benchmark query #36)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.44
+  },
+  {
+    "id": "EVAL-037",
+    "customer_tweet": "How do I change my primary email address associated with Apple ID? (Benchmark query #37)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.33
+  },
+  {
+    "id": "EVAL-038",
+    "customer_tweet": "How do I change my primary email address associated with Apple ID? (Benchmark query #38)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.79
+  },
+  {
+    "id": "EVAL-039",
+    "customer_tweet": "How do I change my primary email address associated with Apple ID? (Benchmark query #39)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.56
+  },
+  {
+    "id": "EVAL-040",
+    "customer_tweet": "How do I change my primary email address associated with Apple ID? (Benchmark query #40)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.64
+  },
+  {
+    "id": "EVAL-041",
+    "customer_tweet": "My account was hacked, password changed, and unauthorized purchases made! (Benchmark query #41)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.36
+  },
+  {
+    "id": "EVAL-042",
+    "customer_tweet": "My account was hacked, password changed, and unauthorized purchases made! (Benchmark query #42)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.63
+  },
+  {
+    "id": "EVAL-043",
+    "customer_tweet": "My account was hacked, password changed, and unauthorized purchases made! (Benchmark query #43)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.21
+  },
+  {
+    "id": "EVAL-044",
+    "customer_tweet": "My account was hacked, password changed, and unauthorized purchases made! (Benchmark query #44)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.44
+  },
+  {
+    "id": "EVAL-045",
+    "customer_tweet": "My account was hacked, password changed, and unauthorized purchases made! (Benchmark query #45)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.62
+  },
+  {
+    "id": "EVAL-046",
+    "customer_tweet": "Can't receive 2FA SMS code because I lost my phone while traveling. (Benchmark query #46)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.2
+  },
+  {
+    "id": "EVAL-047",
+    "customer_tweet": "Can't receive 2FA SMS code because I lost my phone while traveling. (Benchmark query #47)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.28
+  },
+  {
+    "id": "EVAL-048",
+    "customer_tweet": "Can't receive 2FA SMS code because I lost my phone while traveling. (Benchmark query #48)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.95
+  },
+  {
+    "id": "EVAL-049",
+    "customer_tweet": "Can't receive 2FA SMS code because I lost my phone while traveling. (Benchmark query #49)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.59
+  },
+  {
+    "id": "EVAL-050",
+    "customer_tweet": "Can't receive 2FA SMS code because I lost my phone while traveling. (Benchmark query #50)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.42
+  },
+  {
+    "id": "EVAL-051",
+    "customer_tweet": "How to turn on Lockdown Mode on iOS 17? (Benchmark query #51)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.29
+  },
+  {
+    "id": "EVAL-052",
+    "customer_tweet": "How to turn on Lockdown Mode on iOS 17? (Benchmark query #52)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.39
+  },
+  {
+    "id": "EVAL-053",
+    "customer_tweet": "How to turn on Lockdown Mode on iOS 17? (Benchmark query #53)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.98
+  },
+  {
+    "id": "EVAL-054",
+    "customer_tweet": "How to turn on Lockdown Mode on iOS 17? (Benchmark query #54)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.44
+  },
+  {
+    "id": "EVAL-055",
+    "customer_tweet": "How to turn on Lockdown Mode on iOS 17? (Benchmark query #55)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.47
+  },
+  {
+    "id": "EVAL-056",
+    "customer_tweet": "Account disabled in the App Store and iTunes, how do I unlock it? (Benchmark query #56)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.36
+  },
+  {
+    "id": "EVAL-057",
+    "customer_tweet": "Account disabled in the App Store and iTunes, how do I unlock it? (Benchmark query #57)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.97
+  },
+  {
+    "id": "EVAL-058",
+    "customer_tweet": "Account disabled in the App Store and iTunes, how do I unlock it? (Benchmark query #58)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.99
+  },
+  {
+    "id": "EVAL-059",
+    "customer_tweet": "Account disabled in the App Store and iTunes, how do I unlock it? (Benchmark query #59)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.9
+  },
+  {
+    "id": "EVAL-060",
+    "customer_tweet": "Account disabled in the App Store and iTunes, how do I unlock it? (Benchmark query #60)",
+    "ground_truth_intent": "account_access",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
+    "human_judge_score": 4.88
+  },
+  {
+    "id": "EVAL-061",
+    "customer_tweet": "Was double charged $19.99 for iCloud storage subscription. (Benchmark query #61)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.97
+  },
+  {
+    "id": "EVAL-062",
+    "customer_tweet": "Was double charged $19.99 for iCloud storage subscription. (Benchmark query #62)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.97
+  },
+  {
+    "id": "EVAL-063",
+    "customer_tweet": "Was double charged $19.99 for iCloud storage subscription. (Benchmark query #63)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.65
+  },
+  {
+    "id": "EVAL-064",
+    "customer_tweet": "Was double charged $19.99 for iCloud storage subscription. (Benchmark query #64)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.57
+  },
+  {
+    "id": "EVAL-065",
+    "customer_tweet": "Was double charged $19.99 for iCloud storage subscription. (Benchmark query #65)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.59
+  },
+  {
+    "id": "EVAL-066",
+    "customer_tweet": "Unknown $600 charge from Apple.com on my bank statement, I don't own any Apple devices! (Benchmark query #66)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.27
+  },
+  {
+    "id": "EVAL-067",
+    "customer_tweet": "Unknown $600 charge from Apple.com on my bank statement, I don't own any Apple devices! (Benchmark query #67)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.46
+  },
+  {
+    "id": "EVAL-068",
+    "customer_tweet": "Unknown $600 charge from Apple.com on my bank statement, I don't own any Apple devices! (Benchmark query #68)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.44
+  },
+  {
+    "id": "EVAL-069",
+    "customer_tweet": "Unknown $600 charge from Apple.com on my bank statement, I don't own any Apple devices! (Benchmark query #69)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.4
+  },
+  {
+    "id": "EVAL-070",
+    "customer_tweet": "Unknown $600 charge from Apple.com on my bank statement, I don't own any Apple devices! (Benchmark query #70)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.87
+  },
+  {
+    "id": "EVAL-071",
+    "customer_tweet": "Can I transfer an App Store purchase to a different Apple ID? (Benchmark query #71)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.69
+  },
+  {
+    "id": "EVAL-072",
+    "customer_tweet": "Can I transfer an App Store purchase to a different Apple ID? (Benchmark query #72)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.26
+  },
+  {
+    "id": "EVAL-073",
+    "customer_tweet": "Can I transfer an App Store purchase to a different Apple ID? (Benchmark query #73)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.68
+  },
+  {
+    "id": "EVAL-074",
+    "customer_tweet": "Can I transfer an App Store purchase to a different Apple ID? (Benchmark query #74)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.51
+  },
+  {
+    "id": "EVAL-075",
+    "customer_tweet": "Can I transfer an App Store purchase to a different Apple ID? (Benchmark query #75)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.64
+  },
+  {
+    "id": "EVAL-076",
+    "customer_tweet": "Subscribed to Apple Music family plan but it's only showing individual tier. (Benchmark query #76)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.53
+  },
+  {
+    "id": "EVAL-077",
+    "customer_tweet": "Subscribed to Apple Music family plan but it's only showing individual tier. (Benchmark query #77)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.29
+  },
+  {
+    "id": "EVAL-078",
+    "customer_tweet": "Subscribed to Apple Music family plan but it's only showing individual tier. (Benchmark query #78)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.29
+  },
+  {
+    "id": "EVAL-079",
+    "customer_tweet": "Subscribed to Apple Music family plan but it's only showing individual tier. (Benchmark query #79)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.75
+  },
+  {
+    "id": "EVAL-080",
+    "customer_tweet": "Subscribed to Apple Music family plan but it's only showing individual tier. (Benchmark query #80)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.35
+  },
+  {
+    "id": "EVAL-081",
+    "customer_tweet": "My refund was approved 7 days ago but funds haven't posted to my account. (Benchmark query #81)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.84
+  },
+  {
+    "id": "EVAL-082",
+    "customer_tweet": "My refund was approved 7 days ago but funds haven't posted to my account. (Benchmark query #82)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.91
+  },
+  {
+    "id": "EVAL-083",
+    "customer_tweet": "My refund was approved 7 days ago but funds haven't posted to my account. (Benchmark query #83)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.33
+  },
+  {
+    "id": "EVAL-084",
+    "customer_tweet": "My refund was approved 7 days ago but funds haven't posted to my account. (Benchmark query #84)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.66
+  },
+  {
+    "id": "EVAL-085",
+    "customer_tweet": "My refund was approved 7 days ago but funds haven't posted to my account. (Benchmark query #85)",
+    "ground_truth_intent": "billing_refund",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
+    "human_judge_score": 4.77
+  },
+  {
+    "id": "EVAL-086",
+    "customer_tweet": "Track order status for custom engraved iPad Air. (Benchmark query #86)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.75
+  },
+  {
+    "id": "EVAL-087",
+    "customer_tweet": "Track order status for custom engraved iPad Air. (Benchmark query #87)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.26
+  },
+  {
+    "id": "EVAL-088",
+    "customer_tweet": "Track order status for custom engraved iPad Air. (Benchmark query #88)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.68
+  },
+  {
+    "id": "EVAL-089",
+    "customer_tweet": "Track order status for custom engraved iPad Air. (Benchmark query #89)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.68
+  },
+  {
+    "id": "EVAL-090",
+    "customer_tweet": "Track order status for custom engraved iPad Air. (Benchmark query #90)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.94
+  },
+  {
+    "id": "EVAL-091",
+    "customer_tweet": "Package delivered to wrong address in another state according to FedEx! (Benchmark query #91)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.39
+  },
+  {
+    "id": "EVAL-092",
+    "customer_tweet": "Package delivered to wrong address in another state according to FedEx! (Benchmark query #92)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.69
+  },
+  {
+    "id": "EVAL-093",
+    "customer_tweet": "Package delivered to wrong address in another state according to FedEx! (Benchmark query #93)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.98
+  },
+  {
+    "id": "EVAL-094",
+    "customer_tweet": "Package delivered to wrong address in another state according to FedEx! (Benchmark query #94)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.27
+  },
+  {
+    "id": "EVAL-095",
+    "customer_tweet": "Package delivered to wrong address in another state according to FedEx! (Benchmark query #95)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.4
+  },
+  {
+    "id": "EVAL-096",
+    "customer_tweet": "Can I pick up my online order at Apple Store Fifth Ave today? (Benchmark query #96)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.51
+  },
+  {
+    "id": "EVAL-097",
+    "customer_tweet": "Can I pick up my online order at Apple Store Fifth Ave today? (Benchmark query #97)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.38
+  },
+  {
+    "id": "EVAL-098",
+    "customer_tweet": "Can I pick up my online order at Apple Store Fifth Ave today? (Benchmark query #98)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.65
+  },
+  {
+    "id": "EVAL-099",
+    "customer_tweet": "Can I pick up my online order at Apple Store Fifth Ave today? (Benchmark query #99)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.9
+  },
+  {
+    "id": "EVAL-100",
+    "customer_tweet": "Can I pick up my online order at Apple Store Fifth Ave today? (Benchmark query #100)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.54
+  },
+  {
+    "id": "EVAL-101",
+    "customer_tweet": "Trade-in box never arrived in mail after 2 weeks. (Benchmark query #101)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.87
+  },
+  {
+    "id": "EVAL-102",
+    "customer_tweet": "Trade-in box never arrived in mail after 2 weeks. (Benchmark query #102)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.92
+  },
+  {
+    "id": "EVAL-103",
+    "customer_tweet": "Trade-in box never arrived in mail after 2 weeks. (Benchmark query #103)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.26
+  },
+  {
+    "id": "EVAL-104",
+    "customer_tweet": "Trade-in box never arrived in mail after 2 weeks. (Benchmark query #104)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.43
+  },
+  {
+    "id": "EVAL-105",
+    "customer_tweet": "Trade-in box never arrived in mail after 2 weeks. (Benchmark query #105)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.77
+  },
+  {
+    "id": "EVAL-106",
+    "customer_tweet": "Order cancelled without notice by Apple, why? (Benchmark query #106)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.21
+  },
+  {
+    "id": "EVAL-107",
+    "customer_tweet": "Order cancelled without notice by Apple, why? (Benchmark query #107)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.42
+  },
+  {
+    "id": "EVAL-108",
+    "customer_tweet": "Order cancelled without notice by Apple, why? (Benchmark query #108)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.81
+  },
+  {
+    "id": "EVAL-109",
+    "customer_tweet": "Order cancelled without notice by Apple, why? (Benchmark query #109)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.46
+  },
+  {
+    "id": "EVAL-110",
+    "customer_tweet": "Order cancelled without notice by Apple, why? (Benchmark query #110)",
+    "ground_truth_intent": "order_shipping",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
+    "human_judge_score": 4.85
+  },
+  {
+    "id": "EVAL-111",
+    "customer_tweet": "How long does battery replacement take at Genius Bar? (Benchmark query #111)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.28
+  },
+  {
+    "id": "EVAL-112",
+    "customer_tweet": "How long does battery replacement take at Genius Bar? (Benchmark query #112)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.31
+  },
+  {
+    "id": "EVAL-113",
+    "customer_tweet": "How long does battery replacement take at Genius Bar? (Benchmark query #113)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.36
+  },
+  {
+    "id": "EVAL-114",
+    "customer_tweet": "How long does battery replacement take at Genius Bar? (Benchmark query #114)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.88
+  },
+  {
+    "id": "EVAL-115",
+    "customer_tweet": "How long does battery replacement take at Genius Bar? (Benchmark query #115)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.35
+  },
+  {
+    "id": "EVAL-116",
+    "customer_tweet": "MacBook screen hinges broke and screen cracked during normal closure. (Benchmark query #116)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.85
+  },
+  {
+    "id": "EVAL-117",
+    "customer_tweet": "MacBook screen hinges broke and screen cracked during normal closure. (Benchmark query #117)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.6
+  },
+  {
+    "id": "EVAL-118",
+    "customer_tweet": "MacBook screen hinges broke and screen cracked during normal closure. (Benchmark query #118)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.46
+  },
+  {
+    "id": "EVAL-119",
+    "customer_tweet": "MacBook screen hinges broke and screen cracked during normal closure. (Benchmark query #119)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.73
+  },
+  {
+    "id": "EVAL-120",
+    "customer_tweet": "MacBook screen hinges broke and screen cracked during normal closure. (Benchmark query #120)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.71
+  },
+  {
+    "id": "EVAL-121",
+    "customer_tweet": "Is liquid damage covered under standard 1-year warranty? (Benchmark query #121)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.56
+  },
+  {
+    "id": "EVAL-122",
+    "customer_tweet": "Is liquid damage covered under standard 1-year warranty? (Benchmark query #122)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.56
+  },
+  {
+    "id": "EVAL-123",
+    "customer_tweet": "Is liquid damage covered under standard 1-year warranty? (Benchmark query #123)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.48
+  },
+  {
+    "id": "EVAL-124",
+    "customer_tweet": "Is liquid damage covered under standard 1-year warranty? (Benchmark query #124)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.81
+  },
+  {
+    "id": "EVAL-125",
+    "customer_tweet": "Is liquid damage covered under standard 1-year warranty? (Benchmark query #125)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.33
+  },
+  {
+    "id": "EVAL-126",
+    "customer_tweet": "iPhone speaker volume is extremely low after dropping in water. (Benchmark query #126)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.27
+  },
+  {
+    "id": "EVAL-127",
+    "customer_tweet": "iPhone speaker volume is extremely low after dropping in water. (Benchmark query #127)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.76
+  },
+  {
+    "id": "EVAL-128",
+    "customer_tweet": "iPhone speaker volume is extremely low after dropping in water. (Benchmark query #128)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.61
+  },
+  {
+    "id": "EVAL-129",
+    "customer_tweet": "iPhone speaker volume is extremely low after dropping in water. (Benchmark query #129)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.97
+  },
+  {
+    "id": "EVAL-130",
+    "customer_tweet": "iPhone speaker volume is extremely low after dropping in water. (Benchmark query #130)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.79
+  },
+  {
+    "id": "EVAL-131",
+    "customer_tweet": "MagSafe charger melting plastic on back of iPhone 15! (Benchmark query #131)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.83
+  },
+  {
+    "id": "EVAL-132",
+    "customer_tweet": "MagSafe charger melting plastic on back of iPhone 15! (Benchmark query #132)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.88
+  },
+  {
+    "id": "EVAL-133",
+    "customer_tweet": "MagSafe charger melting plastic on back of iPhone 15! (Benchmark query #133)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.47
+  },
+  {
+    "id": "EVAL-134",
+    "customer_tweet": "MagSafe charger melting plastic on back of iPhone 15! (Benchmark query #134)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.6
+  },
+  {
+    "id": "EVAL-135",
+    "customer_tweet": "MagSafe charger melting plastic on back of iPhone 15! (Benchmark query #135)",
+    "ground_truth_intent": "hardware_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
+    "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
+    "human_judge_score": 4.4
+  },
+  {
+    "id": "EVAL-136",
+    "customer_tweet": "Is spatial audio supported on original AirPods? (Benchmark query #136)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.3
+  },
+  {
+    "id": "EVAL-137",
+    "customer_tweet": "Is spatial audio supported on original AirPods? (Benchmark query #137)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.96
+  },
+  {
+    "id": "EVAL-138",
+    "customer_tweet": "Is spatial audio supported on original AirPods? (Benchmark query #138)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.76
+  },
+  {
+    "id": "EVAL-139",
+    "customer_tweet": "Is spatial audio supported on original AirPods? (Benchmark query #139)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.91
+  },
+  {
+    "id": "EVAL-140",
+    "customer_tweet": "Is spatial audio supported on original AirPods? (Benchmark query #140)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.96
+  },
+  {
+    "id": "EVAL-141",
+    "customer_tweet": "What is the trade-in value for iPhone 11 64GB? (Benchmark query #141)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.98
+  },
+  {
+    "id": "EVAL-142",
+    "customer_tweet": "What is the trade-in value for iPhone 11 64GB? (Benchmark query #142)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.81
+  },
+  {
+    "id": "EVAL-143",
+    "customer_tweet": "What is the trade-in value for iPhone 11 64GB? (Benchmark query #143)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.39
+  },
+  {
+    "id": "EVAL-144",
+    "customer_tweet": "What is the trade-in value for iPhone 11 64GB? (Benchmark query #144)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.29
+  },
+  {
+    "id": "EVAL-145",
+    "customer_tweet": "What is the trade-in value for iPhone 11 64GB? (Benchmark query #145)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.41
+  },
+  {
+    "id": "EVAL-146",
+    "customer_tweet": "Does Apple Student Discount require UNiDAYS verification? (Benchmark query #146)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.85
+  },
+  {
+    "id": "EVAL-147",
+    "customer_tweet": "Does Apple Student Discount require UNiDAYS verification? (Benchmark query #147)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.78
+  },
+  {
+    "id": "EVAL-148",
+    "customer_tweet": "Does Apple Student Discount require UNiDAYS verification? (Benchmark query #148)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.41
+  },
+  {
+    "id": "EVAL-149",
+    "customer_tweet": "Does Apple Student Discount require UNiDAYS verification? (Benchmark query #149)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.85
+  },
+  {
+    "id": "EVAL-150",
+    "customer_tweet": "Does Apple Student Discount require UNiDAYS verification? (Benchmark query #150)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.9
+  },
+  {
+    "id": "EVAL-151",
+    "customer_tweet": "Can I use Apple Pay in retail stores without cellular data? (Benchmark query #151)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.2
+  },
+  {
+    "id": "EVAL-152",
+    "customer_tweet": "Can I use Apple Pay in retail stores without cellular data? (Benchmark query #152)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.9
+  },
+  {
+    "id": "EVAL-153",
+    "customer_tweet": "Can I use Apple Pay in retail stores without cellular data? (Benchmark query #153)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.54
+  },
+  {
+    "id": "EVAL-154",
+    "customer_tweet": "Can I use Apple Pay in retail stores without cellular data? (Benchmark query #154)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.28
+  },
+  {
+    "id": "EVAL-155",
+    "customer_tweet": "Can I use Apple Pay in retail stores without cellular data? (Benchmark query #155)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": false,
+    "escalation_reason": "N/A",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.69
+  },
+  {
+    "id": "EVAL-156",
+    "customer_tweet": "I've been on hold for 3 hours and I'm calling my lawyer! (Benchmark query #156)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.75
+  },
+  {
+    "id": "EVAL-157",
+    "customer_tweet": "I've been on hold for 3 hours and I'm calling my lawyer! (Benchmark query #157)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.94
+  },
+  {
+    "id": "EVAL-158",
+    "customer_tweet": "I've been on hold for 3 hours and I'm calling my lawyer! (Benchmark query #158)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.6
+  },
+  {
+    "id": "EVAL-159",
+    "customer_tweet": "I've been on hold for 3 hours and I'm calling my lawyer! (Benchmark query #159)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.34
+  },
+  {
+    "id": "EVAL-160",
+    "customer_tweet": "I've been on hold for 3 hours and I'm calling my lawyer! (Benchmark query #160)",
+    "ground_truth_intent": "general_inquiry",
+    "ground_truth_escalate": true,
+    "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
+    "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
+    "human_judge_score": 4.68
+  }
+]
