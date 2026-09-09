@@ -236,6 +236,15 @@ While our **0.7959 Escalation F1** and **4.64 LLM Judge Score** appear strong, p
 ├── data_pipeline.py    # Multi-turn thread ingestion & dataset processing pipeline
 ├── main.py             # Master orchestrator script executing full benchmark suite
 ├── report_gen.py       # Automated technical report generator (produces REPORT.md)
+├── dashboard_ui.png    # Web UI Clean White Dashboard interface screenshot
 ├── README.md           # Master project documentation & architectural report
 └── REPORT.md           # Technical decision log & detailed failure analysis report
 ```
+
+---
+
+## Web UI Dashboard Interface
+
+Below is the clean, minimalist white Web UI running on `http://127.0.0.1:8000`, demonstrating intent classification, escalation routing, HyDE hybrid context retrieval, and real-time SSE token streaming:
+
+![Apple Support AI Agent Web UI Dashboard](dashboard_ui.png)
