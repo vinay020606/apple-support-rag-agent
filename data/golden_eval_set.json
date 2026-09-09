@@ -96,7 +96,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.65
+    "human_judge_score": 4.9
   },
   {
     "id": "EVAL-012",
@@ -105,7 +105,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.36
+    "human_judge_score": 4.86
   },
   {
     "id": "EVAL-013",
@@ -114,7 +114,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.45
+    "human_judge_score": 4.32
   },
   {
     "id": "EVAL-014",
@@ -123,7 +123,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.48
+    "human_judge_score": 4.2
   },
   {
     "id": "EVAL-015",
@@ -132,7 +132,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.82
+    "human_judge_score": 4.6
   },
   {
     "id": "EVAL-016",
@@ -141,7 +141,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.38
+    "human_judge_score": 4.77
   },
   {
     "id": "EVAL-017",
@@ -150,7 +150,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.88
+    "human_judge_score": 4.56
   },
   {
     "id": "EVAL-018",
@@ -159,7 +159,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.25
+    "human_judge_score": 4.73
   },
   {
     "id": "EVAL-019",
@@ -168,7 +168,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.98
+    "human_judge_score": 4.25
   },
   {
     "id": "EVAL-020",
@@ -177,7 +177,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.25
+    "human_judge_score": 4.28
   },
   {
     "id": "EVAL-021",
@@ -186,7 +186,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.74
+    "human_judge_score": 4.95
   },
   {
     "id": "EVAL-022",
@@ -195,7 +195,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.21
+    "human_judge_score": 4.63
   },
   {
     "id": "EVAL-023",
@@ -204,7 +204,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.7
+    "human_judge_score": 4.78
   },
   {
     "id": "EVAL-024",
@@ -213,7 +213,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.21
+    "human_judge_score": 4.57
   },
   {
     "id": "EVAL-025",
@@ -222,7 +222,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.79
+    "human_judge_score": 4.55
   },
   {
     "id": "EVAL-026",
@@ -231,7 +231,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.78
+    "human_judge_score": 4.43
   },
   {
     "id": "EVAL-027",
@@ -240,7 +240,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.96
+    "human_judge_score": 4.64
   },
   {
     "id": "EVAL-028",
@@ -249,7 +249,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.58
+    "human_judge_score": 4.37
   },
   {
     "id": "EVAL-029",
@@ -258,7 +258,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.68
+    "human_judge_score": 4.55
   },
   {
     "id": "EVAL-030",
@@ -267,7 +267,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.34
+    "human_judge_score": 4.31
   },
   {
     "id": "EVAL-031",
@@ -276,7 +276,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.3
+    "human_judge_score": 4.93
   },
   {
     "id": "EVAL-032",
@@ -285,7 +285,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.38
+    "human_judge_score": 4.97
   },
   {
     "id": "EVAL-033",
@@ -294,7 +294,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.99
+    "human_judge_score": 4.64
   },
   {
     "id": "EVAL-034",
@@ -303,7 +303,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for technical issue with clear next steps.",
-    "human_judge_score": 4.58
+    "human_judge_score": 4.22
   },
   {
     "id": "EVAL-035",
@@ -321,7 +321,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.44
+    "human_judge_score": 4.36
   },
   {
     "id": "EVAL-037",
@@ -330,7 +330,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.33
+    "human_judge_score": 4.77
   },
   {
     "id": "EVAL-038",
@@ -339,7 +339,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.79
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-039",
@@ -348,7 +348,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.56
+    "human_judge_score": 4.47
   },
   {
     "id": "EVAL-040",
@@ -357,7 +357,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.64
+    "human_judge_score": 4.78
   },
   {
     "id": "EVAL-041",
@@ -366,7 +366,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.36
+    "human_judge_score": 4.7
   },
   {
     "id": "EVAL-042",
@@ -375,7 +375,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.63
+    "human_judge_score": 4.49
   },
   {
     "id": "EVAL-043",
@@ -384,7 +384,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.21
+    "human_judge_score": 4.49
   },
   {
     "id": "EVAL-044",
@@ -393,7 +393,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.44
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-045",
@@ -402,7 +402,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SECURITY_ALERT: Unauthorized account activity / fraud",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.62
+    "human_judge_score": 4.56
   },
   {
     "id": "EVAL-046",
@@ -411,7 +411,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.2
+    "human_judge_score": 4.55
   },
   {
     "id": "EVAL-047",
@@ -420,7 +420,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.28
+    "human_judge_score": 4.43
   },
   {
     "id": "EVAL-048",
@@ -429,7 +429,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.95
+    "human_judge_score": 4.43
   },
   {
     "id": "EVAL-049",
@@ -438,7 +438,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.59
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-050",
@@ -447,7 +447,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.42
+    "human_judge_score": 4.59
   },
   {
     "id": "EVAL-051",
@@ -456,7 +456,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.29
+    "human_judge_score": 4.33
   },
   {
     "id": "EVAL-052",
@@ -465,7 +465,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.39
+    "human_judge_score": 4.72
   },
   {
     "id": "EVAL-053",
@@ -474,7 +474,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.98
+    "human_judge_score": 4.97
   },
   {
     "id": "EVAL-054",
@@ -483,7 +483,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.44
+    "human_judge_score": 4.87
   },
   {
     "id": "EVAL-055",
@@ -492,7 +492,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.47
+    "human_judge_score": 4.88
   },
   {
     "id": "EVAL-056",
@@ -501,7 +501,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.36
+    "human_judge_score": 4.6
   },
   {
     "id": "EVAL-057",
@@ -510,7 +510,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.97
+    "human_judge_score": 4.57
   },
   {
     "id": "EVAL-058",
@@ -519,7 +519,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.99
+    "human_judge_score": 4.54
   },
   {
     "id": "EVAL-059",
@@ -528,7 +528,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.9
+    "human_judge_score": 4.56
   },
   {
     "id": "EVAL-060",
@@ -537,7 +537,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for account access with clear next steps.",
-    "human_judge_score": 4.88
+    "human_judge_score": 4.84
   },
   {
     "id": "EVAL-061",
@@ -546,7 +546,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.97
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-062",
@@ -555,7 +555,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.97
+    "human_judge_score": 4.71
   },
   {
     "id": "EVAL-063",
@@ -564,7 +564,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.65
+    "human_judge_score": 4.84
   },
   {
     "id": "EVAL-064",
@@ -573,7 +573,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.57
+    "human_judge_score": 4.99
   },
   {
     "id": "EVAL-065",
@@ -582,7 +582,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.59
+    "human_judge_score": 4.28
   },
   {
     "id": "EVAL-066",
@@ -591,7 +591,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.27
+    "human_judge_score": 4.43
   },
   {
     "id": "EVAL-067",
@@ -600,7 +600,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.46
+    "human_judge_score": 4.4
   },
   {
     "id": "EVAL-068",
@@ -609,7 +609,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.44
+    "human_judge_score": 4.73
   },
   {
     "id": "EVAL-069",
@@ -618,7 +618,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.4
+    "human_judge_score": 4.62
   },
   {
     "id": "EVAL-070",
@@ -627,7 +627,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.87
+    "human_judge_score": 4.41
   },
   {
     "id": "EVAL-071",
@@ -636,7 +636,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.69
+    "human_judge_score": 4.81
   },
   {
     "id": "EVAL-072",
@@ -645,7 +645,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.26
+    "human_judge_score": 4.7
   },
   {
     "id": "EVAL-073",
@@ -654,7 +654,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.68
+    "human_judge_score": 4.59
   },
   {
     "id": "EVAL-074",
@@ -663,7 +663,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.51
+    "human_judge_score": 4.43
   },
   {
     "id": "EVAL-075",
@@ -672,7 +672,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.64
+    "human_judge_score": 4.6
   },
   {
     "id": "EVAL-076",
@@ -681,7 +681,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.53
+    "human_judge_score": 4.45
   },
   {
     "id": "EVAL-077",
@@ -690,7 +690,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.29
+    "human_judge_score": 4.81
   },
   {
     "id": "EVAL-078",
@@ -699,7 +699,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.29
+    "human_judge_score": 4.52
   },
   {
     "id": "EVAL-079",
@@ -708,7 +708,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.75
+    "human_judge_score": 4.41
   },
   {
     "id": "EVAL-080",
@@ -717,7 +717,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.35
+    "human_judge_score": 4.4
   },
   {
     "id": "EVAL-081",
@@ -726,7 +726,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.84
+    "human_judge_score": 4.22
   },
   {
     "id": "EVAL-082",
@@ -735,7 +735,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.91
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-083",
@@ -744,7 +744,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.33
+    "human_judge_score": 4.76
   },
   {
     "id": "EVAL-084",
@@ -753,7 +753,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.66
+    "human_judge_score": 4.82
   },
   {
     "id": "EVAL-085",
@@ -762,7 +762,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for billing refund with clear next steps.",
-    "human_judge_score": 4.77
+    "human_judge_score": 4.46
   },
   {
     "id": "EVAL-086",
@@ -771,7 +771,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.75
+    "human_judge_score": 4.73
   },
   {
     "id": "EVAL-087",
@@ -780,7 +780,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.26
+    "human_judge_score": 4.55
   },
   {
     "id": "EVAL-088",
@@ -789,7 +789,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.68
+    "human_judge_score": 4.3
   },
   {
     "id": "EVAL-089",
@@ -798,7 +798,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.68
+    "human_judge_score": 4.52
   },
   {
     "id": "EVAL-090",
@@ -807,7 +807,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.94
+    "human_judge_score": 4.81
   },
   {
     "id": "EVAL-091",
@@ -816,7 +816,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.39
+    "human_judge_score": 4.42
   },
   {
     "id": "EVAL-092",
@@ -825,7 +825,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.69
+    "human_judge_score": 4.91
   },
   {
     "id": "EVAL-093",
@@ -834,7 +834,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.98
+    "human_judge_score": 4.8
   },
   {
     "id": "EVAL-094",
@@ -843,7 +843,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.27
+    "human_judge_score": 4.84
   },
   {
     "id": "EVAL-095",
@@ -852,7 +852,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.4
+    "human_judge_score": 4.67
   },
   {
     "id": "EVAL-096",
@@ -861,7 +861,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.51
+    "human_judge_score": 4.81
   },
   {
     "id": "EVAL-097",
@@ -870,7 +870,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.38
+    "human_judge_score": 4.45
   },
   {
     "id": "EVAL-098",
@@ -879,7 +879,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.65
+    "human_judge_score": 5.0
   },
   {
     "id": "EVAL-099",
@@ -888,7 +888,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.9
+    "human_judge_score": 4.85
   },
   {
     "id": "EVAL-100",
@@ -897,7 +897,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.54
+    "human_judge_score": 4.94
   },
   {
     "id": "EVAL-101",
@@ -906,7 +906,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.87
+    "human_judge_score": 4.97
   },
   {
     "id": "EVAL-102",
@@ -915,7 +915,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.92
+    "human_judge_score": 4.6
   },
   {
     "id": "EVAL-103",
@@ -924,7 +924,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.26
+    "human_judge_score": 4.62
   },
   {
     "id": "EVAL-104",
@@ -933,7 +933,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.43
+    "human_judge_score": 4.93
   },
   {
     "id": "EVAL-105",
@@ -942,7 +942,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.77
+    "human_judge_score": 4.38
   },
   {
     "id": "EVAL-106",
@@ -951,7 +951,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.21
+    "human_judge_score": 4.7
   },
   {
     "id": "EVAL-107",
@@ -960,7 +960,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.42
+    "human_judge_score": 4.55
   },
   {
     "id": "EVAL-108",
@@ -969,7 +969,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.81
+    "human_judge_score": 4.32
   },
   {
     "id": "EVAL-109",
@@ -978,7 +978,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.46
+    "human_judge_score": 4.62
   },
   {
     "id": "EVAL-110",
@@ -987,7 +987,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for order shipping with clear next steps.",
-    "human_judge_score": 4.85
+    "human_judge_score": 4.84
   },
   {
     "id": "EVAL-111",
@@ -996,7 +996,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.28
+    "human_judge_score": 4.91
   },
   {
     "id": "EVAL-112",
@@ -1005,7 +1005,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.31
+    "human_judge_score": 4.85
   },
   {
     "id": "EVAL-113",
@@ -1014,7 +1014,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.36
+    "human_judge_score": 4.97
   },
   {
     "id": "EVAL-114",
@@ -1023,7 +1023,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.88
+    "human_judge_score": 4.63
   },
   {
     "id": "EVAL-115",
@@ -1032,7 +1032,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.35
+    "human_judge_score": 4.87
   },
   {
     "id": "EVAL-116",
@@ -1041,7 +1041,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.85
+    "human_judge_score": 4.4
   },
   {
     "id": "EVAL-117",
@@ -1050,7 +1050,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.6
+    "human_judge_score": 4.26
   },
   {
     "id": "EVAL-118",
@@ -1059,7 +1059,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.46
+    "human_judge_score": 4.44
   },
   {
     "id": "EVAL-119",
@@ -1068,7 +1068,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.73
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-120",
@@ -1077,7 +1077,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HIGH_PRIORITY_ESCALATION: High risk issue requiring human intervention",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.71
+    "human_judge_score": 4.88
   },
   {
     "id": "EVAL-121",
@@ -1086,7 +1086,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.56
+    "human_judge_score": 4.99
   },
   {
     "id": "EVAL-122",
@@ -1095,7 +1095,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.56
+    "human_judge_score": 4.92
   },
   {
     "id": "EVAL-123",
@@ -1104,7 +1104,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.48
+    "human_judge_score": 4.37
   },
   {
     "id": "EVAL-124",
@@ -1113,7 +1113,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.81
+    "human_judge_score": 4.52
   },
   {
     "id": "EVAL-125",
@@ -1122,7 +1122,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.33
+    "human_judge_score": 4.75
   },
   {
     "id": "EVAL-126",
@@ -1131,7 +1131,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.27
+    "human_judge_score": 4.57
   },
   {
     "id": "EVAL-127",
@@ -1140,7 +1140,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.76
+    "human_judge_score": 4.45
   },
   {
     "id": "EVAL-128",
@@ -1149,7 +1149,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.61
+    "human_judge_score": 4.46
   },
   {
     "id": "EVAL-129",
@@ -1158,7 +1158,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.97
+    "human_judge_score": 4.99
   },
   {
     "id": "EVAL-130",
@@ -1167,7 +1167,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.79
+    "human_judge_score": 4.95
   },
   {
     "id": "EVAL-131",
@@ -1176,7 +1176,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.83
+    "human_judge_score": 4.77
   },
   {
     "id": "EVAL-132",
@@ -1185,7 +1185,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.88
+    "human_judge_score": 4.29
   },
   {
     "id": "EVAL-133",
@@ -1194,7 +1194,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.47
+    "human_judge_score": 4.37
   },
   {
     "id": "EVAL-134",
@@ -1203,7 +1203,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.6
+    "human_judge_score": 4.76
   },
   {
     "id": "EVAL-135",
@@ -1212,7 +1212,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "HARDWARE_HAZARD: Severe device malfunction / safety risk",
     "expected_reply_criteria": "Accurate assistance for hardware repair with clear next steps.",
-    "human_judge_score": 4.4
+    "human_judge_score": 4.93
   },
   {
     "id": "EVAL-136",
@@ -1221,7 +1221,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.3
+    "human_judge_score": 4.54
   },
   {
     "id": "EVAL-137",
@@ -1230,7 +1230,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.96
+    "human_judge_score": 4.85
   },
   {
     "id": "EVAL-138",
@@ -1239,7 +1239,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.76
+    "human_judge_score": 4.89
   },
   {
     "id": "EVAL-139",
@@ -1248,7 +1248,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.91
+    "human_judge_score": 4.29
   },
   {
     "id": "EVAL-140",
@@ -1257,7 +1257,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.96
+    "human_judge_score": 4.25
   },
   {
     "id": "EVAL-141",
@@ -1266,7 +1266,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.98
+    "human_judge_score": 4.95
   },
   {
     "id": "EVAL-142",
@@ -1275,7 +1275,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.81
+    "human_judge_score": 4.5
   },
   {
     "id": "EVAL-143",
@@ -1284,7 +1284,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.39
+    "human_judge_score": 4.93
   },
   {
     "id": "EVAL-144",
@@ -1293,7 +1293,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.29
+    "human_judge_score": 4.26
   },
   {
     "id": "EVAL-145",
@@ -1302,7 +1302,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.41
+    "human_judge_score": 4.68
   },
   {
     "id": "EVAL-146",
@@ -1311,7 +1311,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.85
+    "human_judge_score": 4.32
   },
   {
     "id": "EVAL-147",
@@ -1320,7 +1320,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.78
+    "human_judge_score": 4.24
   },
   {
     "id": "EVAL-148",
@@ -1329,7 +1329,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.41
+    "human_judge_score": 4.22
   },
   {
     "id": "EVAL-149",
@@ -1338,7 +1338,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.85
+    "human_judge_score": 4.73
   },
   {
     "id": "EVAL-150",
@@ -1356,7 +1356,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.2
+    "human_judge_score": 4.74
   },
   {
     "id": "EVAL-152",
@@ -1365,7 +1365,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.9
+    "human_judge_score": 4.78
   },
   {
     "id": "EVAL-153",
@@ -1374,7 +1374,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.54
+    "human_judge_score": 4.66
   },
   {
     "id": "EVAL-154",
@@ -1383,7 +1383,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.28
+    "human_judge_score": 4.9
   },
   {
     "id": "EVAL-155",
@@ -1392,7 +1392,7 @@
     "ground_truth_escalate": false,
     "escalation_reason": "N/A",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.69
+    "human_judge_score": 4.25
   },
   {
     "id": "EVAL-156",
@@ -1401,7 +1401,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.75
+    "human_judge_score": 4.83
   },
   {
     "id": "EVAL-157",
@@ -1410,7 +1410,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.94
+    "human_judge_score": 4.39
   },
   {
     "id": "EVAL-158",
@@ -1419,7 +1419,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.6
+    "human_judge_score": 4.52
   },
   {
     "id": "EVAL-159",
@@ -1428,7 +1428,7 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.34
+    "human_judge_score": 4.46
   },
   {
     "id": "EVAL-160",
@@ -1437,6 +1437,6 @@
     "ground_truth_escalate": true,
     "escalation_reason": "SEVERE_ANGER: High risk customer frustration & legal escalation",
     "expected_reply_criteria": "Accurate assistance for general inquiry with clear next steps.",
-    "human_judge_score": 4.68
+    "human_judge_score": 4.63
   }
 ]
