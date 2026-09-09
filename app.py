@@ -2,7 +2,7 @@
 app.py - FastAPI Web UI Server
 AI Customer Support Agent & Hybrid RAG Pipeline (@AppleSupport)
 
-Minimalist, High-Contrast Black & White Professional Interface and REST API.
+Clean, Minimalist White Theme Interface and REST API Endpoint.
 """
 
 import os
@@ -77,21 +77,22 @@ def render_ui():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Support AI Agent | Minimalist Dashboard</title>
+    <title>Apple Support AI Agent | Clean Dashboard</title>
     <!-- Professional Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #000000;
-            --panel-bg: #0a0a0a;
-            --panel-border: #262626;
-            --input-bg: #121212;
-            --text-primary: #ffffff;
-            --text-secondary: #a3a3a3;
-            --text-muted: #737373;
-            --accent-bw: #ffffff;
+            --bg-color: #ffffff;
+            --panel-bg: #fcfcfc;
+            --panel-border: #e5e7eb;
+            --input-bg: #f9fafb;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #6b7280;
+            --btn-bg: #111827;
+            --btn-text: #ffffff;
         }
 
         * {
@@ -105,7 +106,7 @@ def render_ui():
             background-color: var(--bg-color);
             color: var(--text-primary);
             min-height: 100vh;
-            padding: 2.5rem 1.5rem;
+            padding: 2rem 1.5rem;
             line-height: 1.5;
         }
 
@@ -119,48 +120,48 @@ def render_ui():
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.25rem;
             border-bottom: 1px solid var(--panel-border);
-            margin-bottom: 2rem;
+            margin-bottom: 1.75rem;
         }
 
         .header-title {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             color: var(--text-primary);
         }
 
         .header-subtitle {
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             color: var(--text-secondary);
             margin-top: 2px;
             font-weight: 400;
         }
 
-        .system-status {
+        .status-badge {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.75rem;
             color: var(--text-secondary);
             border: 1px solid var(--panel-border);
             padding: 4px 10px;
             border-radius: 4px;
-            background: #121212;
-            letter-spacing: 0.05em;
+            background-color: var(--input-bg);
+            letter-spacing: 0.03em;
         }
 
         /* Grid */
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.75rem;
+            gap: 1.5rem;
         }
 
         @media (max-width: 860px) {
             .grid { grid-template-columns: 1fr; }
         }
 
-        /* Panel Card */
+        /* Card Panel */
         .card {
             background-color: var(--panel-bg);
             border: 1px solid var(--panel-border);
@@ -168,39 +169,36 @@ def render_ui():
             padding: 1.5rem;
         }
 
-        .card-header {
-            font-size: 0.95rem;
+        .card-title {
+            font-size: 0.88rem;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 1rem;
+            margin-bottom: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.04em;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
 
-        /* Textarea Input */
+        /* Textarea */
         textarea {
             width: 100%;
             height: 120px;
-            background-color: var(--input-bg);
+            background-color: var(--bg-color);
             border: 1px solid var(--panel-border);
             border-radius: 6px;
             padding: 0.85rem;
             color: var(--text-primary);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             resize: none;
             outline: none;
             transition: border-color 0.2s ease;
         }
 
         textarea:focus {
-            border-color: #ffffff;
+            border-color: var(--text-primary);
         }
 
-        /* Preset Chips */
-        .presets {
+        /* Chips */
+        .chips {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
@@ -219,9 +217,9 @@ def render_ui():
         }
 
         .chip:hover {
-            background-color: #ffffff;
-            color: #000000;
-            border-color: #ffffff;
+            background-color: var(--text-primary);
+            color: #ffffff;
+            border-color: var(--text-primary);
         }
 
         /* Controls */
@@ -232,7 +230,7 @@ def render_ui():
 
         select {
             flex: 1;
-            background-color: var(--input-bg);
+            background-color: var(--bg-color);
             border: 1px solid var(--panel-border);
             color: var(--text-primary);
             padding: 0.65rem 0.85rem;
@@ -243,53 +241,51 @@ def render_ui():
         }
 
         select:focus {
-            border-color: #ffffff;
+            border-color: var(--text-primary);
         }
 
         .btn {
-            background-color: #ffffff;
-            color: #000000;
-            border: 1px solid #ffffff;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: 1px solid var(--btn-bg);
             padding: 0.65rem 1.4rem;
             border-radius: 6px;
             font-weight: 600;
             font-size: 0.85rem;
             cursor: pointer;
-            transition: background-color 0.2s ease, color 0.2s ease;
+            transition: opacity 0.2s ease;
         }
 
         .btn:hover {
-            background-color: #e5e5e5;
-            border-color: #e5e5e5;
+            opacity: 0.88;
         }
 
-        /* Output Badges */
-        .badge-row {
+        /* Badges */
+        .badge-group {
             display: flex;
             gap: 0.75rem;
             margin-bottom: 1.25rem;
         }
 
-        .mono-badge {
+        .mono-tag {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.78rem;
             padding: 6px 12px;
             border-radius: 4px;
             border: 1px solid var(--panel-border);
-            background-color: var(--input-bg);
+            background-color: var(--bg-color);
             color: var(--text-primary);
         }
 
-        .mono-badge.escalated {
-            background-color: #ffffff;
-            color: #000000;
-            border-color: #ffffff;
+        .mono-tag.escalated {
+            background-color: #111827;
+            color: #ffffff;
             font-weight: 600;
         }
 
-        /* Response Draft Box */
-        .response-box {
-            background-color: var(--input-bg);
+        /* Draft Box */
+        .draft-container {
+            background-color: var(--bg-color);
             border: 1px solid var(--panel-border);
             border-radius: 6px;
             padding: 1rem;
@@ -297,13 +293,13 @@ def render_ui():
             position: relative;
         }
 
-        .response-text {
-            font-size: 0.9rem;
+        .draft-text {
+            font-size: 0.88rem;
             color: var(--text-primary);
             white-space: pre-wrap;
         }
 
-        .char-count {
+        .char-counter {
             position: absolute;
             bottom: 8px;
             right: 12px;
@@ -312,24 +308,24 @@ def render_ui():
             color: var(--text-muted);
         }
 
-        /* Retrieved Context List */
-        .retrieved-container {
+        /* Retrieved List */
+        .retrieved-section {
             margin-bottom: 1.25rem;
         }
 
-        .retrieved-title {
+        .retrieved-heading {
             font-size: 0.78rem;
             font-weight: 600;
             color: var(--text-secondary);
             text-transform: uppercase;
-            letter-spacing: 0.04em;
+            letter-spacing: 0.03em;
             margin-bottom: 0.5rem;
         }
 
-        .retrieved-card {
-            background-color: var(--input-bg);
+        .retrieved-box {
+            background-color: var(--bg-color);
             border: 1px solid var(--panel-border);
-            border-left: 2px solid #ffffff;
+            border-left: 3px solid #111827;
             border-radius: 4px;
             padding: 8px 12px;
             font-size: 0.8rem;
@@ -337,7 +333,7 @@ def render_ui():
             margin-bottom: 6px;
         }
 
-        .retrieved-card strong {
+        .retrieved-box strong {
             color: var(--text-primary);
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.75rem;
@@ -345,29 +341,29 @@ def render_ui():
             margin-bottom: 2px;
         }
 
-        /* Score Metrics Grid */
-        .metrics-grid {
+        /* Metrics */
+        .metrics-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 0.75rem;
         }
 
-        .metric-box {
-            background-color: var(--input-bg);
+        .metric-card {
+            background-color: var(--bg-color);
             border: 1px solid var(--panel-border);
             border-radius: 6px;
             padding: 0.85rem;
             text-align: center;
         }
 
-        .metric-value {
+        .metric-num {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: var(--text-primary);
         }
 
-        .metric-label {
+        .metric-title {
             font-size: 0.7rem;
             color: var(--text-muted);
             margin-top: 2px;
@@ -375,7 +371,7 @@ def render_ui():
             letter-spacing: 0.03em;
         }
 
-        .loading {
+        .loading-text {
             display: none;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.8rem;
@@ -392,16 +388,16 @@ def render_ui():
                 <div class="header-title">Apple Support AI Agent</div>
                 <div class="header-subtitle">Hybrid Search (Dense + BM25) • RRF Fusion • Cross-Encoder Re-ranking</div>
             </div>
-            <div class="system-status">STATUS: ONLINE</div>
+            <div class="status-badge">STATUS: ONLINE</div>
         </header>
 
         <div class="grid">
-            <!-- Left: Query Input Panel -->
+            <!-- Left: Query Input Card -->
             <div class="card">
-                <div class="card-header">Input Query</div>
+                <div class="card-title">Input Query</div>
                 <textarea id="queryInput" placeholder="Enter customer tweet or click sample preset below..."></textarea>
                 
-                <div class="presets">
+                <div class="chips">
                     <div class="chip" onclick="setQuery('My iPhone 14 battery dropped from 80% to 15% in one hour after updating to iOS 17.4!')">Battery Drain</div>
                     <div class="chip" onclick="setQuery('Someone locked my Apple ID remotely and demanded $200 ransom to unlock it!')">Locked Apple ID</div>
                     <div class="chip" onclick="setQuery('My MacBook Pro battery is swelling up and pushing the trackpad out! Is this dangerous?')">Swollen Battery</div>
@@ -419,42 +415,42 @@ def render_ui():
                 </div>
             </div>
 
-            <!-- Right: Response & Analysis Panel -->
+            <!-- Right: Response Output Card -->
             <div class="card">
-                <div class="card-header">Agent Output & RAG Analysis</div>
+                <div class="card-title">Agent Output & RAG Analysis</div>
                 
-                <div id="loader" class="loading">[Processing query through RAG pipeline...]</div>
+                <div id="loader" class="loading-text">[Processing query through RAG pipeline...]</div>
 
                 <div id="outputArea">
-                    <div class="badge-row">
-                        <div id="intentBadge" class="mono-badge">INTENT: technical_issue</div>
-                        <div id="escBadge" class="mono-badge">HANDLED: AUTO</div>
+                    <div class="badge-group">
+                        <div id="intentBadge" class="mono-tag">INTENT: technical_issue</div>
+                        <div id="escBadge" class="mono-tag">STATUS: AUTO-HANDLED</div>
                     </div>
 
-                    <div class="response-box">
-                        <div id="draftText" class="response-text">Select a query above and click "Execute Agent" to run prediction.</div>
-                        <div id="charCounter" class="char-count">0 / 280</div>
+                    <div class="draft-container">
+                        <div id="draftText" class="draft-text">Select a query above and click "Execute Agent" to run prediction.</div>
+                        <div id="charCounter" class="char-counter">0 / 280</div>
                     </div>
 
-                    <div class="retrieved-container">
-                        <div class="retrieved-title">Top-3 Hybrid RAG Retrieved Resolutions</div>
+                    <div class="retrieved-section">
+                        <div class="retrieved-heading">Top-3 Hybrid RAG Retrieved Resolutions</div>
                         <div id="retrievedList">
-                            <div class="retrieved-card">Context resolutions will display here upon query execution.</div>
+                            <div class="retrieved-box">Context resolutions will display here upon query execution.</div>
                         </div>
                     </div>
 
-                    <div class="metrics-grid">
-                        <div class="metric-box">
-                            <div id="groundingScore" class="metric-value">4.85</div>
-                            <div class="metric-label">Grounding</div>
+                    <div class="metrics-row">
+                        <div class="metric-card">
+                            <div id="groundingScore" class="metric-num">4.85</div>
+                            <div class="metric-title">Grounding</div>
                         </div>
-                        <div class="metric-box">
-                            <div id="toneScore" class="metric-value">4.90</div>
-                            <div class="metric-label">Brand Tone</div>
+                        <div class="metric-card">
+                            <div id="toneScore" class="metric-num">4.90</div>
+                            <div class="metric-title">Brand Tone</div>
                         </div>
-                        <div class="metric-box">
-                            <div id="safetyScore" class="metric-value">5.00</div>
-                            <div class="metric-label">Safety</div>
+                        <div class="metric-card">
+                            <div id="safetyScore" class="metric-num">5.00</div>
+                            <div class="metric-title">Safety</div>
                         </div>
                     </div>
                 </div>
@@ -491,10 +487,10 @@ def render_ui():
 
                 const escBadge = document.getElementById('escBadge');
                 if (data.predicted_escalate) {
-                    escBadge.className = 'mono-badge escalated';
+                    escBadge.className = 'mono-tag escalated';
                     escBadge.innerText = 'STATUS: ESCALATED TO HUMAN';
                 } else {
-                    escBadge.className = 'mono-badge';
+                    escBadge.className = 'mono-tag';
                     escBadge.innerText = 'STATUS: AUTO-HANDLED';
                 }
 
@@ -506,13 +502,13 @@ def render_ui():
                 if (data.retrieved_context && data.retrieved_context.length > 0) {
                     data.retrieved_context.forEach((item, idx) => {
                         const div = document.createElement('div');
-                        div.className = 'retrieved-card';
+                        div.className = 'retrieved-box';
                         const scoreText = item.cross_encoder_score ? ` (Cross-Encoder: ${item.cross_encoder_score.toFixed(4)})` : '';
                         div.innerHTML = `<strong>#${idx+1} [${item.intent}]${scoreText}</strong>${item.brand_resolution}`;
                         retrievedList.appendChild(div);
                     });
                 } else {
-                    retrievedList.innerHTML = '<div class="retrieved-card">No RAG retrieval used in baseline mode.</div>';
+                    retrievedList.innerHTML = '<div class="retrieved-box">No RAG retrieval used in baseline mode.</div>';
                 }
 
                 document.getElementById('groundingScore').innerText = data.llm_judge.grounding_factual_accuracy.toFixed(2);
