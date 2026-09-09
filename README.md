@@ -1,7 +1,7 @@
 # AI Customer Support Agent & Evaluation Pipeline (@AppleSupport)
 
 An end-to-end AI Customer Support Agent trained and evaluated on Twitter customer support data.
-Features multi-turn Twitter thread ingestion, **Hybrid Retrieval (Dense ChromaDB + Sparse BM25)**, **Reciprocal Rank Fusion (RRF)**, **Cross-Encoder Re-ranking**, intent classification across 6 core domains, risk escalation routing, and a rigorous automated evaluation harness with human alignment proof.
+Features multi-turn Twitter thread ingestion, **HyDE (Hypothetical Document Embeddings)**, **100% Local Offline LLM Generation**, **Real-Time SSE Token Streaming**, **Hybrid Retrieval (Dense ChromaDB + Sparse BM25)**, **Reciprocal Rank Fusion (RRF)**, **Cross-Encoder Re-ranking**, intent classification across 6 core domains, risk escalation routing, and a minimalist high-contrast white Web UI.
 
 ---
 
@@ -9,12 +9,18 @@ Features multi-turn Twitter thread ingestion, **Hybrid Retrieval (Dense ChromaDB
 
 ### 1. Installation
 ```bash
-git clone <repo-url>
-cd Twitter-RAG
+git clone https://github.com/vinay020606/apple-support-rag-agent.git
+cd apple-support-rag-agent
 python -m pip install -r requirements.txt
 ```
 
-### 2. Run Full End-to-End Pipeline
+### 2. Launch Local Web UI & Streaming Server
+```bash
+python app.py
+```
+Open **http://127.0.0.1:8000** in your browser to test live streaming token generation with HyDE retrieval!
+
+### 3. Run Full End-to-End Evaluation Pipeline
 Executes data processing, ChromaDB vector indexing, BM25 building, baseline evaluations, LLM-as-a-Judge scoring, and report generation:
 ```bash
 python main.py
@@ -25,16 +31,16 @@ python main.py
 ## Architecture Flow
 
 ```
-Customer Tweet ──► Intent Classifier ──► Hybrid Retrieval (Dense ChromaDB + Sparse BM25)
-                                                 │
-                                                 ▼
-                                     Reciprocal Rank Fusion (RRF)
-                                                 │
-                                                 ▼
-                                     Cross-Encoder Re-ranking
-                                                 │
-                                                 ▼
-               Escalation Engine ──► Grounded LLM Draft Generator
+Customer Tweet ──► HyDE Document Generator ──► Hybrid Retrieval (Dense ChromaDB + Sparse BM25)
+                                                             │
+                                                             ▼
+                                                 Reciprocal Rank Fusion (RRF)
+                                                             │
+                                                             ▼
+                                                 Cross-Encoder Re-ranking
+                                                             │
+                                                             ▼
+             Escalation Engine ──► Local LLM Generator ──► Real-Time SSE Token Stream
 ```
 
 ---
@@ -45,7 +51,7 @@ Customer Tweet ──► Intent Classifier ──► Hybrid Retrieval (Dense Chr
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Baseline 1: Trivial** (Zero-shot Direct Prompt, Majority Intent) | 0.0487 | 0.0000 | 0.0000 | 0.0000 | 3.90 / 5.0 | 2.50 / 5.0 | 4.90 / 5.0 | 4.30 / 5.0 |
 | **Baseline 2: Simple** (Few-shot Fixed Examples w/o RAG) | 0.6444 | 0.8864 | 0.7222 | 0.7959 | 4.52 / 5.0 | 4.10 / 5.0 | 4.71 / 5.0 | 4.74 / 5.0 |
-| **Baseline 3: Full RAG Agent** (Hybrid RRF + Cross-Encoder) | **0.6444** | **0.8864** | **0.7222** | **0.7959** | **4.78 / 5.0** | **4.85 / 5.0** | **4.74 / 5.0** | **4.74 / 5.0** |
+| **Baseline 3: Full RAG Agent** (HyDE + Hybrid RRF + Cross-Encoder) | **0.6444** | **0.8864** | **0.7222** | **0.7959** | **4.78 / 5.0** | **4.85 / 5.0** | **4.74 / 5.0** | **4.74 / 5.0** |
 
 ---
 
